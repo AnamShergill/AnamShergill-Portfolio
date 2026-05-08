@@ -8,6 +8,7 @@ import { ExternalLink, Star } from "lucide-react"
 import { projects } from "@/data/portfolio"
 import { GitHubIcon } from "@/components/icons"
 import AnimatedHeading from "@/components/animated-heading"
+import Image from "next/image"
 
 const categories = ["All", "Business", "E-Commerce", "AI Application", "AI Infrastructure", "AI / Robotics", "Frontend", "Productivity", "Utility Tool", "Landing Page"]
 
@@ -721,12 +722,9 @@ export default function Projects() {
                       
                       {/* Live Website Screenshot */}
                       <div className="relative w-full h-[calc(100%-28px)] bg-gray-900 overflow-hidden">
-                        {/* Actual screenshot image */}
-                        <motion.img
-                          src={project.image}
-                          alt={`${project.title} preview`}
-                          className="w-full h-full object-cover object-top transition-all duration-700"
-                          loading="lazy"
+                        {/* Actual screenshot image with Next.js optimization */}
+                        <motion.div
+                          className="relative w-full h-full"
                           initial={{ scale: 1 }}
                           whileHover={{ 
                             scale: 1.08,
@@ -735,7 +733,7 @@ export default function Projects() {
                           animate={
                             // Slow scrolling animation for featured projects
                             (project.featured || project.id === 1 || project.id === 2 || project.id === 5) ? {
-                              objectPosition: ['50% 0%', '50% 30%', '50% 0%'],
+                              y: [0, -20, 0],
                             } : {}
                           }
                           transition={
@@ -745,11 +743,23 @@ export default function Projects() {
                               ease: "easeInOut",
                             } : {}
                           }
-                          onError={(e) => {
-                            // Hide image and show fallback on error
-                            (e.target as HTMLImageElement).style.display = 'none';
-                          }}
-                        />
+                        >
+                          <Image
+                            src={project.image}
+                            alt={`${project.title} preview`}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="object-cover object-top"
+                            quality={75}
+                            priority={project.featured || index < 3}
+                            placeholder="blur"
+                            blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
+                            onError={(e) => {
+                              // Hide image and show fallback on error
+                              (e.target as HTMLImageElement).style.display = 'none';
+                            }}
+                          />
+                        </motion.div>
                         
                         {/* Animated spotlight glow on hover */}
                         <motion.div

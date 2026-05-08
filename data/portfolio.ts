@@ -83,10 +83,7 @@ export const projects: Project[] = [
       "AI-powered assistant system",
       "Productivity automation",
       "Conversational AI workflows",
-      "Virtual employee concept",
-      "Task automation architecture",
-      "Interactive AI experience",
-      "Modern AI-focused UI"
+      "Virtual employee concept"
     ],
     badges: ["AI Powered", "Automation", "Future Ready"]
   },
@@ -95,13 +92,19 @@ export const projects: Project[] = [
     title: "Physical AI & Humanoid Robotics Book",
     description: "A futuristic AI-native educational platform focused on Physical AI, humanoid robotics, ROS 2, embodied intelligence, simulation systems, and Vision-Language-Action (VLA) architectures through an interactive modern learning experience.",
     image: "/projects/physical-humanoid.png",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "AI Concepts", "ROS 2"],
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Docusaurus", "ROS 2"],
     category: "AI / Robotics",
     featured: true,
     isAI: true,
     isRobotics: true,
     liveUrl: "https://physical-humaniod-ai-book-8xrs.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/physical-ai-robotics-book"
+    githubUrl: "https://github.com/AnamShergill/physical-ai-robotics-book",
+    highlights: [
+      "Built with Docusaurus",
+      "Interactive documentation",
+      "ROS 2 integration guides",
+      "VLA architecture concepts"
+    ]
   },
   {
     id: 3,
@@ -112,7 +115,13 @@ export const projects: Project[] = [
     category: "Business",
     featured: true,
     liveUrl: "https://tax-consultancy-firm.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/levy-consultant"
+    githubUrl: "https://github.com/AnamShergill/levy-consultant",
+    highlights: [
+      "Professional business design",
+      "Service showcase sections",
+      "Contact form integration",
+      "Mobile-first responsive"
+    ]
   },
   {
     id: 4,
@@ -122,7 +131,13 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     category: "Business",
     liveUrl: "https://www.khanfishsupplier.com/",
-    githubUrl: "https://github.com/AnamShergill/khan-fish-supplier"
+    githubUrl: "https://github.com/AnamShergill/khan-fish-supplier",
+    highlights: [
+      "Product catalog display",
+      "Business information",
+      "Contact integration",
+      "Clean modern UI"
+    ]
   },
   {
     id: 5,
@@ -132,7 +147,13 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     category: "E-Commerce",
     liveUrl: "https://burger-ecommerce-website.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/burger-ecommerce"
+    githubUrl: "https://github.com/AnamShergill/burger-ecommerce",
+    highlights: [
+      "Add to cart functionality",
+      "Product menu display",
+      "Order management",
+      "Food-focused design"
+    ]
   },
   {
     id: 6,
@@ -143,7 +164,13 @@ export const projects: Project[] = [
     category: "E-Commerce",
     featured: true,
     liveUrl: "https://hackathon-e-commerce-website-liard.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/hackathon-ecommerce"
+    githubUrl: "https://github.com/AnamShergill/hackathon-ecommerce",
+    highlights: [
+      "Add to cart feature",
+      "Add to wishlist",
+      "Product filtering",
+      "Modern React architecture"
+    ]
   },
   {
     id: 7,
@@ -157,12 +184,10 @@ export const projects: Project[] = [
     featured: true,
     githubUrl: "https://github.com/AnamShergill/ai-todo-chatbot",
     highlights: [
-      "Containerized application",
       "Kubernetes deployment",
-      "Dockerized architecture",
+      "Docker containerization",
       "Cloud-native workflow",
-      "AI-powered productivity system",
-      "Scalable deployment structure"
+      "Scalable architecture"
     ]
   },
   {
@@ -173,7 +198,13 @@ export const projects: Project[] = [
     tags: ["Bootstrap", "CSS", "JavaScript"],
     category: "Frontend",
     liveUrl: "https://charity-website-bootstrap.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/modern-charity"
+    githubUrl: "https://github.com/AnamShergill/modern-charity",
+    highlights: [
+      "Bootstrap framework",
+      "Donation sections",
+      "Accessibility focused",
+      "Responsive grid layout"
+    ]
   },
   {
     id: 9,
@@ -183,7 +214,13 @@ export const projects: Project[] = [
     tags: ["Python", "Streamlit"],
     category: "Utility Tool",
     liveUrl: "https://password-strength-checker-murex-three.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/password-checker"
+    githubUrl: "https://github.com/AnamShergill/password-checker",
+    highlights: [
+      "Real-time validation",
+      "Strength analysis",
+      "Security recommendations",
+      "Interactive feedback"
+    ]
   },
   {
     id: 10,
@@ -193,7 +230,13 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS", "JavaScript"],
     category: "Frontend",
     liveUrl: "https://food-blog-beryl.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/food-recipe"
+    githubUrl: "https://github.com/AnamShergill/food-recipe",
+    highlights: [
+      "Recipe catalog",
+      "Search functionality",
+      "Responsive card layout",
+      "Food photography display"
+    ]
   },
   {
     id: 11,
@@ -203,7 +246,13 @@ export const projects: Project[] = [
     tags: ["Python", "Streamlit"],
     category: "Productivity",
     liveUrl: "https://growth-mindset-challenge-anamshergill.streamlit.app/",
-    githubUrl: "https://github.com/AnamShergill/growth-mindset"
+    githubUrl: "https://github.com/AnamShergill/growth-mindset",
+    highlights: [
+      "Interactive challenges",
+      "Progress tracking",
+      "Motivational content",
+      "User engagement features"
+    ]
   },
   {
     id: 12,
@@ -213,7 +262,13 @@ export const projects: Project[] = [
     tags: ["HTML", "CSS"],
     category: "Landing Page",
     liveUrl: "https://smit-css-assignemnt-3-mobile-landing-page.vercel.app/",
-    githubUrl: "https://github.com/AnamShergill/mobile-landing"
+    githubUrl: "https://github.com/AnamShergill/mobile-landing",
+    highlights: [
+      "Mobile-first design",
+      "Clean UI hierarchy",
+      "Responsive layout",
+      "Modern CSS techniques"
+    ]
   }
 ]
 
